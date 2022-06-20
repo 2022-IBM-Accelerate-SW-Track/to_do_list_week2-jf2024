@@ -37,6 +37,9 @@ class Home extends Component {
     const todos = this.state.todos.filter((todo) => {
       return todo.id !== id;
     });
+    this.setState({
+      todos: todos,
+    })
   };
 
   render() {
